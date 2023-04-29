@@ -11,7 +11,7 @@ struct ContentView: View
 {
     var body: some View
     {
-        NavigationView()
+        NavigationStack
         {
             ZStack
             {
@@ -21,25 +21,29 @@ struct ContentView: View
                 {
                     Circle()
                         .frame(width: 150, height: 150)
-                    Text("App iShare")
+                    Text("iShare")
                         .font(.largeTitle)
                     HStack
                     {
                         Spacer()
                         NavigationLink(destination: LoginView()) {
                             Text("Login")
-                                .foregroundColor(Color.white)
-                                .frame(width: 70, height: 30)
                                 .cornerRadius(15)
+                                .font(.title2)
+                                .foregroundColor(Color.white)
+                                .frame(width: 90, height: 40)
                                 .background(Color.blue)
+                                .padding()
                         }
                         
                         NavigationLink(destination: RegisterView()) {
                             Text("Register")
-                                .foregroundColor(Color.white)
-                                .frame(width: 70, height: 30)
                                 .cornerRadius(15)
+                                .font(.title2)
+                                .foregroundColor(Color.white)
+                                .frame(width: 90, height: 40)
                                 .background(Color.blue)
+                                .padding()
                         }
                         Spacer()
                     }
