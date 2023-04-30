@@ -9,13 +9,27 @@ import SwiftUI
 
 struct HouseMenu: View
 {
+    let publicaciones = ["Publicación 1", "Publicación 2", "Publicación 3"]
+    
     var body: some View
     {
-        ZStack
-        {
-            Color(.systemPink)
-            Image(systemName: "house.fill")
-        }
+        NavigationView {
+                    List {
+                        ForEach(0..<publicaciones.count) { index in
+                            VStack(alignment: .leading) {
+                                Image(systemName: "person.circle")
+                                    .font(.largeTitle)
+                                Text("Nombre de usuario")
+                                    .font(.headline)
+                                Text(publicaciones[index])
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
+                                    .padding(.top, 5)
+                            }
+                        }
+                    }
+                    .navigationBarTitle(Text("Publicaciones"))
+                }
     }
 }
 

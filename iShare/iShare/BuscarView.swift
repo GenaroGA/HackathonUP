@@ -9,12 +9,19 @@ import SwiftUI
 
 struct BuscarView: View
 {
+    @State private var searchText = ""
+    
     var body: some View
     {
-        ZStack
+        NavigationView()
         {
-            Color(.gray)
-            Image(systemName: "magnifyingglass")
+            ZStack
+            {
+                Image("masops")
+                    .searchable(text: $searchText)
+                
+                    
+            }
         }
     }
 }
