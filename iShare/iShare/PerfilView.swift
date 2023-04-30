@@ -27,9 +27,9 @@ struct PerfilView: View
     {
         NavigationView {
                     VStack(alignment: .center, spacing: 20) {
-                        Image(systemName: "person.circle.fill")
+                        Image("Foto1")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 150, height: 150)
                             .padding(.bottom, 20)
                         Text("Nombre de usuario")
                             .font(.title)
@@ -38,9 +38,29 @@ struct PerfilView: View
                             SecureField("Contraseña", text: $password)
                         }
                         .padding(.bottom, 20)
-                        NavigationLink(destination: CuponesView()) {
-                            Text("Cupones")
-                                .font(.headline)
+                        HStack
+                        {
+                            Spacer()
+                            NavigationLink(destination: CuponesView()) {
+                                Text("Cupones")
+                                    .font(.headline)
+                                    .frame(width: 150, height: 50)
+                                    .foregroundColor(Color.white)
+                                    .background(Color("Color1"))
+                                    .cornerRadius(15)
+                                    .padding()
+                            }
+                            Spacer()
+                            NavigationLink(destination: LugaresGView()) {
+                                Text("Lugares Guardados")
+                                    .font(.headline)
+                                    .frame(width: 150, height: 50)
+                                    .foregroundColor(Color.white)
+                                    .background(Color("Color1"))
+                                    .cornerRadius(15)
+                                    .padding()
+                            }
+                            Spacer()
                         }
                         List(publicaciones) { publicacion in
                             HStack(alignment: .top) {

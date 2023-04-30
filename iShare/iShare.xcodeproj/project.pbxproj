@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE46920A29FF05CD00B7EDF5 /* LugaresGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE46920929FF05CD00B7EDF5 /* LugaresGView.swift */; };
 		FE77902029FEDB38005EFB44 /* CuponesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE77901F29FEDB38005EFB44 /* CuponesView.swift */; };
 		FE7D92B729FDC0FA005FE42A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D92B629FDC0FA005FE42A /* LoginView.swift */; };
 		FE7D92B929FDC10D005FE42A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D92B829FDC10D005FE42A /* RegisterView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE46920929FF05CD00B7EDF5 /* LugaresGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresGView.swift; sourceTree = "<group>"; };
 		FE77901F29FEDB38005EFB44 /* CuponesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponesView.swift; sourceTree = "<group>"; };
 		FE7D92B629FDC0FA005FE42A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE7D92B829FDC10D005FE42A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				FE7D92DF29FDF64C005FE42A /* PerfilView.swift */,
 				FE7D92E129FDF707005FE42A /* SettingsView.swift */,
 				FE77901F29FEDB38005EFB44 /* CuponesView.swift */,
+				FE46920929FF05CD00B7EDF5 /* LugaresGView.swift */,
 				FEDC22BA29FD9DCE00E78EB2 /* Assets.xcassets */,
 				FEDC22BC29FD9DCE00E78EB2 /* Preview Content */,
 			);
@@ -166,6 +169,7 @@
 				FE7D92B729FDC0FA005FE42A /* LoginView.swift in Sources */,
 				FE7D92E229FDF707005FE42A /* SettingsView.swift in Sources */,
 				FE7D92DE29FDF46A005FE42A /* HouseMenu.swift in Sources */,
+				FE46920A29FF05CD00B7EDF5 /* LugaresGView.swift in Sources */,
 				FE7D92DC29FDF1F4005FE42A /* BuscarView.swift in Sources */,
 				FE7D92B929FDC10D005FE42A /* RegisterView.swift in Sources */,
 				FEDC22B929FD9DCD00E78EB2 /* ContentView.swift in Sources */,
