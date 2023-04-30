@@ -25,3 +25,6 @@ CREATE TABLE
         `Last_update` timestamp NOT NULL,
         PRIMARY KEY (`ID`)
     ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+
+
+

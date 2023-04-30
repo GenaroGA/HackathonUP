@@ -4,13 +4,13 @@ from datetime import datetime
 
 
 @dataclass
-class User(db.Model):
-    '''User model to interact with DB Table'''
+class Users(db.Model):
+    '''Users model to interact with DB Table'''
 
-    __tablename__ = 'User'
+    __tablename__ = 'Users'
 
-    id: int = db.Column(db.Integer, primary_key=True)
-    name: str = db.Column(db.String(280), nullable=False)
+    user_id: int = db.Column(db.Integer, primary_key=True)
+    Nametag: str = db.Column(db.String(280), nullable=False)
     username: str = db.Column(db.String(280), nullable=False)
     email: str = db.Column(db.String(280), nullable=False)
     password: str = db.Column(db.String(280), nullable=False)
