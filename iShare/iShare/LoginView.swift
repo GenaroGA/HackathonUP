@@ -24,9 +24,10 @@ struct LoginView: View
             {
                 VStack(alignment: .center, spacing: 15) {
                     Spacer()
-                    Circle()
-                        .frame(width: 150, height: 150)
-                        .foregroundColor(.black)
+                    Image("Logo-dentro")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
                     TextField("Name",
                               text: $name ,
                               prompt: Text("Login").foregroundColor(.blue)
