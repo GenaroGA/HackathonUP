@@ -7,28 +7,34 @@
 
 import SwiftUI
 
-struct Settings: Identifiable
-{
-    var id = UUID()
+struct SettingsView: View {
     
-    var color: Color
-    var icono: String
-    var text: String
-    var subText: String
-}
-
-struct SettingsView: View
-{
+    @State private var isPrivateProfile = false
     
-    let settings = [Settings(color: .orange, icono: "airplane", text: "Airplane Mode", subText: ""), Settings(color: .blue, icono: "wifi", text: "Wifi", subText: "On")]
-    
-    var body: some View
-    {
-        ZStack
-        {
-            Color(.white)
-            Image(systemName: "slider.horizontal.3")
+    var body: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("Cuenta")) {
+                    NavigationLink(destination: ChangeUsernameView()) {
+                        Text("Cambiar nombre de usuario")
+                    }
+                    NavigationLink(destination: ChangeEmailView()) {
+                        Text("Cambiar correo electrónico")
+                    }
+                    NavigationLink(destination: ChangePasswordView()) {
+                        Text("Cambiar contraseña")
+                    }
+                }
+                
+                Section(header: Text("Privacidad")) {
+                    Toggle(isOn: $isPrivateProfile) {
+                        Text("Perfil privado")
+                    }
+                }
+            }
+            .navigationBarTitle("Configuraciones")
         }
+        
     }
 }
 
