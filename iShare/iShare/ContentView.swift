@@ -15,12 +15,14 @@ struct ContentView: View
         {
             ZStack
             {
-                Color(.blue)
+                Color(.black)
                     .ignoresSafeArea()
                 VStack
                 {
-                    Circle()
-                        .frame(width: 150, height: 150)
+                    Image("Logo-dentro")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
                     Text("iShare")
                         .font(.largeTitle)
                     HStack
@@ -28,21 +30,22 @@ struct ContentView: View
                         Spacer()
                         NavigationLink(destination: LoginView()) {
                             Text("Login")
-                                .cornerRadius(15)
-                                .font(.title2)
+                                .font(.largeTitle)
+                                .frame(width: 150, height: 50)
                                 .foregroundColor(Color.white)
-                                .frame(width: 90, height: 40)
-                                .background(Color.blue)
+                                .background(Color("Rojo1"))
+                                .cornerRadius(15)
                                 .padding()
+                                
                         }
                         
                         NavigationLink(destination: RegisterView()) {
                             Text("Register")
-                                .cornerRadius(15)
-                                .font(.title2)
+                                .font(.largeTitle)
                                 .foregroundColor(Color.white)
-                                .frame(width: 90, height: 40)
-                                .background(Color.blue)
+                                .frame(width: 150, height: 50)
+                                .background(Color("Rojo1"))
+                                .cornerRadius(15)
                                 .padding()
                         }
                         Spacer()
