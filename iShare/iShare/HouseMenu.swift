@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HouseMenu: View
 {
-    let publicaciones = ["Publicación 1", "Publicación 2", "Publicación 3"]
+    let publicaciones = ["Publicación 1", "Publicación 2", "Publicación 3", "Publicación 4", "Publicación 5", "Publicación 6", "Publicación 7", "Publicación 8"]
     
     var body: some View
     {

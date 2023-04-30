@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE77902029FEDB38005EFB44 /* CuponesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE77901F29FEDB38005EFB44 /* CuponesView.swift */; };
 		FE7D92B729FDC0FA005FE42A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D92B629FDC0FA005FE42A /* LoginView.swift */; };
 		FE7D92B929FDC10D005FE42A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D92B829FDC10D005FE42A /* RegisterView.swift */; };
 		FE7D92D529FDD74C005FE42A /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7D92D429FDD74C005FE42A /* MainMenuView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE77901F29FEDB38005EFB44 /* CuponesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponesView.swift; sourceTree = "<group>"; };
 		FE7D92B629FDC0FA005FE42A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE7D92B829FDC10D005FE42A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FE7D92D429FDD74C005FE42A /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				FE7D92DD29FDF46A005FE42A /* HouseMenu.swift */,
 				FE7D92DF29FDF64C005FE42A /* PerfilView.swift */,
 				FE7D92E129FDF707005FE42A /* SettingsView.swift */,
+				FE77901F29FEDB38005EFB44 /* CuponesView.swift */,
 				FEDC22BA29FD9DCE00E78EB2 /* Assets.xcassets */,
 				FEDC22BC29FD9DCE00E78EB2 /* Preview Content */,
 			);
@@ -166,6 +169,7 @@
 				FE7D92DC29FDF1F4005FE42A /* BuscarView.swift in Sources */,
 				FE7D92B929FDC10D005FE42A /* RegisterView.swift in Sources */,
 				FEDC22B929FD9DCD00E78EB2 /* ContentView.swift in Sources */,
+				FE77902029FEDB38005EFB44 /* CuponesView.swift in Sources */,
 				FEDC22B729FD9DCD00E78EB2 /* iShareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,11 @@ struct BuscarView: View
         {
             ZStack
             {
-                Image("masops")
+                Image("Mapa1")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFit()
+                    .frame(width: 1500, height: 800)
                     .searchable(text: $searchText)
                 
                     
