@@ -23,6 +23,7 @@
 		FEDC22B929FD9DCD00E78EB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC22B829FD9DCD00E78EB2 /* ContentView.swift */; };
 		FEDC22BB29FD9DCE00E78EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDC22BA29FD9DCE00E78EB2 /* Assets.xcassets */; };
 		FEDC22BE29FD9DCE00E78EB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDC22BD29FD9DCE00E78EB2 /* Preview Assets.xcassets */; };
+		FEED38AF29FF330800B82515 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = FEED38AE29FF330800B82515 /* MapboxMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FE49412129FF2331007BBE92 /* ChangeUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsernameView.swift; sourceTree = "<group>"; };
 		FE49412329FF234C007BBE92 /* ChangeEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailView.swift; sourceTree = "<group>"; };
 		FE49412529FF2369007BBE92 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		FE49412729FF314A007BBE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FE77901F29FEDB38005EFB44 /* CuponesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponesView.swift; sourceTree = "<group>"; };
 		FE7D92B629FDC0FA005FE42A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE7D92B829FDC10D005FE42A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEED38AF29FF330800B82515 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		FEDC22B529FD9DCD00E78EB2 /* iShare */ = {
 			isa = PBXGroup;
 			children = (
+				FE49412729FF314A007BBE92 /* Info.plist */,
 				FEDC22B629FD9DCD00E78EB2 /* iShareApp.swift */,
 				FEDC22B829FD9DCD00E78EB2 /* ContentView.swift */,
 				FE7D92B629FDC0FA005FE42A /* LoginView.swift */,
@@ -119,6 +123,9 @@
 			dependencies = (
 			);
 			name = iShare;
+			packageProductDependencies = (
+				FEED38AE29FF330800B82515 /* MapboxMaps */,
+			);
 			productName = iShare;
 			productReference = FEDC22B329FD9DCD00E78EB2 /* iShare.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +154,9 @@
 				Base,
 			);
 			mainGroup = FEDC22AA29FD9DCD00E78EB2;
+			packageReferences = (
+				FEED38AD29FF330800B82515 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = FEDC22B429FD9DCD00E78EB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -317,6 +327,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iShare/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iShare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -345,6 +356,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iShare/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iShare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -385,6 +397,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEED38AD29FF330800B82515 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEED38AE29FF330800B82515 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEED38AD29FF330800B82515 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEDC22AB29FD9DCD00E78EB2 /* Project object */;
 }
